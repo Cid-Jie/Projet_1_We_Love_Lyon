@@ -1,0 +1,162 @@
+/* _header_nav */
+
+.headerNavMax {
+    display: none;
+}
+
+header {
+    position: relative;
+}
+
+.headerNavLogo img {
+    width: 150px;
+}
+
+.headerNavMin {
+    position: fixed;
+    top: -230px;
+    background: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 1));
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 5px;
+    width: 100vw;
+    height: 285px;
+    transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    z-index: 1;
+}
+
+.navDown {
+    top: 0;
+}
+
+
+.headerNavList {
+    margin-top: 0;
+    padding: 5px 10px;
+}
+
+.headerNavList li {
+    list-style: none;
+    text-align: center;
+    line-height: 2rem;
+    padding: 3px 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colorLight);
+}
+
+/* Button */
+
+.headerNavButton  {
+    background: none;
+    border: none;
+    position: absolute;
+    left: 25px;
+    bottom: 13px;
+    transition: 0.5s;
+}
+
+
+.headerNavButton img {
+    width: 25px;
+}
+
+.buttonDown {
+    transform: rotate(180deg);
+}
+
+
+/* _footer */
+footer {
+    height: 60px;
+    min-width: 360px;
+    color: var(--colorLight);
+    background-color: var(--colorDark);
+}
+.text_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    height: 60px;
+}
+.text_footer h3 {
+    font-size: 0.8rem;
+}
+.text_footer p {
+    font-size: 0.7rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    /* Header */
+
+    .headerNavMin {
+        display: none;
+    }
+
+    .headerNavMax {
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding-bottom: 0;
+    }
+
+    .headerNavLogo {
+        vertical-align: middle;
+        height: 50px;
+    }
+
+    .headerNavLogo img {
+        padding-left: 9px;
+    }
+
+    .headerNavList {
+        display: flex;
+        margin-bottom: 5px;
+        padding-right: 30px;
+    }
+
+    .headerNavList li {
+        padding: 0 12px;
+    }
+
+    .headerNavLinks:hover {
+        border-bottom: 2px solid darkred;
+    }
+
+    .headerNavButton {
+        display: none;
+    }
+
+    
+    /* _footer */
+    footer {
+        height: 60px;
+    }
+    .text_footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } 
+    .text_footer h3 {
+        font-size: 1rem;
+    }
+    .text_footer p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,275 @@
+
+/* HEADER */
+.headerTitle {
+  display: flex;
+  background-image: url("../assets/picture/contact.jpg");
+  background-size: cover;
+  background-position-y: 50%;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 60px;
+  max-width: 100%;
+  height: 230px;
+}
+
+.header-type p {
+  color: whitesmoke;
+  font-size: 1.2rem;
+  padding-left: 20%;
+}
+
+.img {
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px;
+}
+
+.wcslogo {
+  margin: auto;
+  padding: 10px;
+  justify-self: center;
+  padding-right: 5px;
+}
+.adresse {
+  padding-left: 5px;
+}
+
+h2 {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 1.2em;
+}
+/* MAIN FORM */
+
+.formSection {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin: 15px 0;
+}
+
+label {
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 1em;
+}
+
+input {
+  height: 2em;
+}
+
+.formcontrol {
+  box-shadow: none;
+  border-radius: 0;
+  border-style: none none solid none;
+  transition:all .4s;
+}
+
+.formcontrol:focus {
+  box-shadow: none;
+  border-color: red;
+  outline: none;
+}
+
+textarea {
+  height: 5em;
+  resize: none;
+}
+
+input, textarea {
+  background: linear-gradient(white, rgb(240, 240, 240));
+  width: 80%;
+  border: none;
+  color: grey;
+  padding: 1px 10px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  color: black;
+}
+
+.buttonForm {
+  background-color: lightgray;
+  border: none;
+  margin: 0 auto 10px;
+  width: 25%;
+  border-radius: 5px;
+  font-size: 1em;
+  box-shadow: 1px -1px 1px 1px rgb(223, 223, 223);
+  padding: 10px 30px;
+  cursor:pointer;
+}
+
+.buttonForm:hover {
+  background-color: rgb(170, 170, 170);
+}
+
+.buttonForm button {
+  background: none;
+  border: none;
+  cursor:pointer;
+}
+
+.contacthover {
+  color: black;
+}
+.contacthover:hover {
+  color: darkred;
+}
+
+/* MAIN TEAM PRESENTATION */
+
+.teamPresentation {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+  padding: 0 15px 15px 15px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
+}
+
+
+.developpers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 300px;
+}
+
+.developpers img {
+  width: 50px;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.teamList li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.teamList img {
+  width: 15px;
+}
+
+.teamList a {
+  color: var(--colorDark);
+}
+
+.teamList a:hover {
+  color: darkred;
+}
+
+
+/* MAIN SCHOOL */
+
+.school {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*height: 300px;*/
+  margin: 20px 10px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
+}
+
+.wcs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.wcs iframe {
+  width: 90%;
+}
+
+.adresse p {
+  display: flex;
+  align-items: center;
+}
+
+.adresse p:first-child {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.adresse h2 {
+  font-size: 1em;
+}
+.adresseLogo {
+  width: 20px;
+  padding-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-type {
+    margin-top: 0;
+    padding-top: 60px;
+    max-width: 100%;
+    height: 190px;
+  }
+
+  .header-type p {
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 30%;
+    font-size: 1.8rem;
+  }
+  .team {
+    display: flex;
+    justify-content: space-around;
+   }
+   .wcs {
+     flex-direction: row;
+     justify-content: space-around;
+     width: 90%;
+     padding-bottom: 1em;
+     padding-top: 1em;
+   }
+
+   .wcs iframe {
+     max-width: 500px;
+   }
+   .wcslogo {
+    margin: auto;
+    padding: 10px;
+    justify-self: center;
+  }
+  .adresse {
+    padding-left: 5px;
+  }
+}
